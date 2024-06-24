@@ -19,9 +19,9 @@ const RightSideBar = () => {
       {/* image */}
 
       <Image
-        className="object-top size-[250px] rounded-full object-cover border-4 border-border-i shadow-lg"
+        className="object-top size-[250px] rounded-full object-cover border-4 border-img-border shadow-lg"
         src={Profile}
-        alt=""
+        alt="Najim"
       />
 
       <h3 className="text-4xl text-primary font-bold mt-4 uppercase">Najim</h3>
@@ -45,7 +45,7 @@ const RightSideBar = () => {
           </span>
         ))}
       </div>
-      <div className="flex gap-2 mt-5 flex-wrap">
+      <div className="flex gap-2 justify-center mt-5 flex-wrap">
         <Link href={"mailto:najim.developer@gmail.com"}>
           <button className="bg-primary text-sm hover:bg-primary/70 duration-500 text-white w-[170px] rounded-lg flex gap-2 justify-center items-center h-10 font-medium">
             <FaEnvelope />
