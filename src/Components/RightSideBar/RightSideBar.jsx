@@ -68,7 +68,7 @@ const RightSideBar = () => {
       <div className="w-full">
         <h3 className="text-primary font-medium text-xl text-start">Bio</h3>
         <p className="text-primary mt-2 leading-7 flex flex-col text-justify">
-          I'm a tech enthusiast interested in programming, computer science,
+          {"I'm"} a tech enthusiast interested in programming, computer science,
           design and many technologies.
           <br />
           <span className="mt-3">
