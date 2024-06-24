@@ -1,18 +1,10 @@
 import React from "react";
 import Profile from "../../assets/profile.jpg";
 import Image from "next/image";
-import {
-  FaDownload,
-  FaEnvelope,
-  FaEnvelopeOpenText,
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
-  FaTelegram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaDownload, FaEnvelope } from "react-icons/fa";
 import profileTags from "@/Data/profileTags";
 import Link from "next/link";
+import socialLinks from "@/Data/socialLinks";
 const RightSideBar = () => {
   return (
     <div className="flex p-5 flex-col justify-center items-center font-primary">
@@ -28,17 +20,17 @@ const RightSideBar = () => {
       <p className="text-secondary text-lg text-center">
         Front-end Web Developer
       </p>
-      <div className="flex flex-wrap justify-center text-2xl gap-x-4 text-primary my-2 *:rounded-full">
-        <FaGithub />
-        <FaLinkedin />
-        <FaTelegram />
-        <FaFacebook />
-        <FaEnvelopeOpenText />
+      <div className="flex flex-wrap justify-center text-2xl gap-x-4 text-primary my-2">
+        {socialLinks?.map((socialLink, idx) => (
+          <Link key={idx} href={socialLink?.url} target="_blank">
+            {socialLink?.icon}
+          </Link>
+        ))}
       </div>
       <div className="flex flex-wrap gap-2 justify-center">
         {profileTags?.map((tag, idx) => (
           <span
-            className="border-[1px] px-[2px] rounded-md border-border-b text-primary/80 font-medium text-sm"
+            className="border-[1px] px-[2px] rounded-md border-border-b text-primary/80 font-medium text-[12px]"
             key={idx}
           >
             {tag}

@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .title {
+    @apply text-[30px] font-bold text-primary mb-7 font-primary;
+  }
+}
+
+.n:hover .show {
+  visibility: visible !important;
+}

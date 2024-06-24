@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="grid p-3 grid-cols-1 lg:grid-cols-12 lg:p-10 gap-6 container">
+    <div className="grid p-3 grid-cols-1 lg:grid-cols-12 lg:p-10 gap-6 container mx-auto">
       <div className="w-full lg:col-span-3 min-h-[calc(100vh-96px)] lg:max-h-[calc(100vh-96px)] rounded-3xl border-2 border-box-border shadow-md lg:overflow-y-scroll">
         <RightSideBar />
       </div>

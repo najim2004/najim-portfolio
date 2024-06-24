@@ -5,6 +5,7 @@ const navList = [
     name: "About",
     to: "/#about",
     icon: <FaUser />,
+    offset: 20,
   },
   {
     name: "Skills",
