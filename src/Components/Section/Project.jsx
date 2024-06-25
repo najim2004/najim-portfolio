@@ -1,10 +1,9 @@
 "use client";
 
 import projectList from "@/Data/projectList";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { LuExternalLink, LuGithub } from "react-icons/lu";
+import { LuArrowRight, LuExternalLink, LuGithub } from "react-icons/lu";
 import { GoInfo } from "react-icons/go";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
@@ -16,12 +15,17 @@ const Project = () => {
         {projectList?.map((project) => (
           <div
             key={project?.id}
-            className="min-h-[150px] border border-box-border rounded-2xl overflow-hidden flex gap-4"
+            className="min-h-[150px] max-h-[200px] border border-box-border rounded-2xl overflow-hidden flex gap-4"
           >
-            <div className="min-w-[200px] min-h-full bg-gray-200">
-              <Image className="" src={""} alt="" />
+            <div className="w-[250px] bg-gray-200">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="h-full w-[250px]"
+                src={project.img}
+                alt={project.title}
+              />
             </div>
-            <div className="flex flex-col justify-center py-5">
+            <div className="flex flex-1 flex-col justify-center py-5">
               <h3 className="text-lg font-medium text-primary">
                 {project?.title}
               </h3>
@@ -70,6 +74,14 @@ const Project = () => {
             <Tooltip id="live-site" />
           </div>
         ))}
+      </div>
+      <div className="flex group justify-end mt-5 font-medium">
+        <Link
+          className="flex items-center justify-center gap-1 group-hover:scale-110 duration-1000"
+          href={"/projects"}
+        >
+          See more <LuArrowRight className="text-xl" />
+        </Link>
       </div>
     </div>
   );

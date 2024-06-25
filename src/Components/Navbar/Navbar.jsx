@@ -2,9 +2,7 @@
 
 import navList from "@/Data/navList";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [sectionId, setSectionId] = useState("/#about");

@@ -2,6 +2,7 @@ const projectList = [
   {
     id: "1",
     title: "MultiCreatify",
+    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
     description:
       "A comprehensive solution to monitor employee workload, manage payroll, and maintain records of employee activities and contracts",
     icon: "/skills/express.svg",
@@ -22,6 +23,7 @@ const projectList = [
   {
     id: "2",
     title: "Voyage Volunteer",
+    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
     description:
       "An web application developed using React.js, Tailwind, Node.js, mongodb, Express firebase jwt.",
     icon: "/skills/react.svg",
@@ -42,6 +44,7 @@ const projectList = [
   {
     id: "3",
     title: "Artistry Avenue",
+    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
     description:
       "Artistry Avenue aims to provide a seamless platform for artists and art enthusiasts to connect.",
     icon: "/skills/mongodb.svg",
@@ -54,6 +57,7 @@ const projectList = [
   {
     id: "4",
     title: "Nexus Properties",
+    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
     description:
       "Nexus Properties is a platform which is designed to provide a seamless experience for those seeking to buy or rent residential homes of exceptional quality.",
     icon: "/skills/react.svg",
