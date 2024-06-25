@@ -6,11 +6,6 @@ import RightSideBar from "@/Components/RightSideBar/RightSideBar";
 import { useEffect } from "react";
 
 const page = () => {
-  // useEffect(() => {
-  //   alert(
-  //     "responsive may not work properly! Because this site under construction!"
-  //   );
-  // }, []);
   return (
     <div className="grid p-3 grid-cols-1 lg:grid-cols-12 lg:p-10 gap-6 container mx-auto">
       <div className="w-full lg:col-span-3 min-h-[calc(100vh-96px)] lg:max-h-[calc(100vh-96px)] rounded-3xl border-2 border-box-border shadow-md lg:overflow-y-scroll">
@@ -21,6 +16,10 @@ const page = () => {
       </div>
       <div className="lg:col-span-3 w-full lg:min-h-[calc(100vh-96px)]">
         <GithubStatus />
+        <h3 className="mt-5 text-center text-red-500 text-2xl font-primary">
+          This site is under construction! So some features may not be working
+          properly!
+        </h3>
       </div>
     </div>
   );

@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
           <Link
             data-tooltip-id="live-site"
             data-tooltip-content="Project Details"
-            href={"/"}
+            href={`/projects/${project?.id}`}
             className="hover:scale-110"
           >
             <GoInfo />
