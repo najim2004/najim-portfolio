@@ -13,7 +13,7 @@ const DetailsHeader = ({ title, desc }) => {
         <FaChevronLeft className="text-2xl" /> Back
       </button>
       <h3 className="text-5xl text-primary font-bold mt-8">{title}</h3>
-      <p className="text-primary mt-3">{desc}</p>
+      <p className="text- primary mt-3 text-red-500">{desc}</p>
     </div>
   );
 };

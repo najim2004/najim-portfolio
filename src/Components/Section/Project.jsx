@@ -29,7 +29,7 @@ const Project = () => {
               <h3 className="text-lg font-medium text-primary">
                 {project?.title}
               </h3>
-              <p className="text-secondary leading-5 my-2 text-sm">
+              <p className="text-secondary leading-5 my-2 text-sm line-clamp-3">
                 {project?.description}
               </p>
               <div className="flex gap-2 flex-wrap">

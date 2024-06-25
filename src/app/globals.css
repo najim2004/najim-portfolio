@@ -8,6 +8,15 @@
   .title {
     @apply text-[30px] font-bold text-primary mb-7 font-primary;
   }
+  .h3 {
+    @apply text-2xl text-primary font-semibold mt-5 mb-2;
+  }
+  .h4 {
+    @apply text-lg font-semibold;
+  }
+  .li {
+    @apply font-medium text-primary/80;
+  }
 }
 
 .n:hover .show {

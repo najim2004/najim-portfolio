@@ -29,7 +29,7 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
 
-          <p className="text-secondary leading-5 mt-4 text-sm">
+          <p className="text-secondary leading-5 mt-4 text-sm line-clamp-3">
             {project?.description}
           </p>
         </div>
