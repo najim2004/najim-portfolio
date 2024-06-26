@@ -1,8 +1,9 @@
 "use client";
 
-import GithubStatus from "@/components/GithubStatus/GithubStatus";
-import MainContent from "@/components/MainContent/MainContent";
-import RightSideBar from "@/components/RightSideBar/RightSideBar";
+import CoursesAndCertificates from "@/Components/CoursesAndCertificates/CoursesAndCertificates";
+import GithubStatus from "@/Components/GithubStatus/GithubStatus";
+import MainContent from "@/Components/MainContent/MainContent";
+import RightSideBar from "@/Components/RightSideBar/RightSideBar";
 
 const page = () => {
   return (
@@ -16,12 +17,9 @@ const page = () => {
       >
         <MainContent />
       </div>
-      <div className="lg:col-span-3 w-full lg:min-h-[calc(100vh-96px)]">
+      <div className="lg:col-span-3 w-full lg:max-h-[calc(100vh-96px)] flex flex-col gap-6">
+        <CoursesAndCertificates />
         <GithubStatus />
-        <h3 className="mt-5 text-center text-red-500 text-2xl font-primary">
-          This site is under construction! So some features may not be working
-          properly!
-        </h3>
       </div>
     </div>
   );
