@@ -5,7 +5,7 @@ import projectList from "@/Data/projectList";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [data, setData] = useState({});
   const { id } = useParams();
   useEffect(() => {
@@ -25,4 +25,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
