@@ -2,7 +2,7 @@ import projectList from "@/Data/projectList";
 import React from "react";
 import ProjectCard from "../UI/ProjectCard";
 
-const Main = () => {
+const ProjectMain = () => {
   return (
     <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md">
       <div className="lg:py-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-6 p-3">
@@ -17,4 +17,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default ProjectMain;

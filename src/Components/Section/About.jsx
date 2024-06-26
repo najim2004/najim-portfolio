@@ -4,7 +4,7 @@ import { LuArrowRight } from "react-icons/lu";
 
 const About = () => {
   return (
-    <div className="w-full px-4 mt-3 font-primary" id="about">
+    <div className="w-full px-4 mt-6 font-primary" id="about">
       <h3 className="title">About me</h3>
       <p>
         I am Najim, a passionate front-end web developer with a strong focus on

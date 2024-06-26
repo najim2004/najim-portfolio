@@ -14,8 +14,8 @@ const SkillsCard = ({ skills, title }) => {
             <Image
               src={skill?.url}
               alt={skill?.name}
-              width={"30"}
-              height={"30"}
+              width={"40"}
+              height={"40"}
               className="group-hover:scale-125 duration-700"
             />
             <h3

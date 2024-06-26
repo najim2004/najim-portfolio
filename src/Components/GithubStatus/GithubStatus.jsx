@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import gitHubProfileImg from "../../assets/github.jpg";
+import Counter from "../UI/Counter";
 const GithubStatus = () => {
   return (
     <div className="font-primary text-primary flex justify-center items-center gap-4 border-box-border border-2 shadow-md rounded-3xl w-full min-h-[100px] py-5 bg-secondary-bg">
@@ -18,19 +19,25 @@ const GithubStatus = () => {
             <tr>
               <td className="lg:!min-w-[100px]">Repos:</td>
               <td>
-                <span className="font-semibold">46</span>
+                <span className="font-semibold">
+                  <Counter end={46} duration={3} />
+                </span>
               </td>
             </tr>
             <tr>
               <td>Followers:</td>
               <td>
-                <span className="font-semibold">00</span>
+                <span className="font-semibold">
+                  <Counter end={0} duration={3} />
+                </span>
               </td>
             </tr>
             <tr>
               <td>Following:</td>
               <td>
-                <span className="font-semibold">02</span>
+                <span className="font-semibold">
+                  <Counter end={2} duration={3} />
+                </span>
               </td>
             </tr>
           </tbody>

@@ -1,11 +1,24 @@
-import React from "react";
+"use client";
 import Profile from "../../assets/profile.jpg";
 import Image from "next/image";
 import { FaDownload, FaEnvelope } from "react-icons/fa";
 import profileTags from "@/Data/profileTags";
 import Link from "next/link";
 import socialLinks from "@/Data/socialLinks";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 const RightSideBar = () => {
+  const [text] = useTypewriter({
+    words: [
+      "Front-end Web Developer",
+      "React Developer",
+      "MERN Stack Developer",
+    ],
+    loop: true,
+    typeSpeed: 70,
+    deleteSpeed: 50,
+    delaySpeed: 1000,
+  });
+
   return (
     <div className="flex p-5 flex-col justify-center items-center font-primary">
       {/* image */}
@@ -18,11 +31,17 @@ const RightSideBar = () => {
 
       <h3 className="text-4xl text-primary font-bold mt-4 uppercase">Najim</h3>
       <p className="text-secondary text-lg text-center">
-        Front-end Web Developer
+        {text}
+        <Cursor cursorStyle="_" />
       </p>
-      <div className="flex flex-wrap justify-center text-2xl gap-x-4 text-primary my-2">
+      <div className="flex flex-wrap justify-center text-2xl gap-x-4 text-primary my-4">
         {socialLinks?.map((socialLink, idx) => (
-          <Link key={idx} href={socialLink?.url} target="_blank">
+          <Link
+            key={idx}
+            href={socialLink?.url}
+            target="_blank"
+            className="hover:scale-110"
+          >
             {socialLink?.icon}
           </Link>
         ))}

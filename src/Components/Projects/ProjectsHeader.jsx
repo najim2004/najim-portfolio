@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { FaChevronLeft } from "react-icons/fa";
 
-const Header = () => {
+const ProjectsHeader = () => {
   const router = useRouter();
   return (
     <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md py-6 px-2 lg:p-10 flex flex-col justify-center items-start">
@@ -22,4 +22,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ProjectsHeader;

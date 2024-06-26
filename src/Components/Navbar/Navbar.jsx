@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 640px)" });
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <div className="nav lg:w-full w-max !z-50 h-14 flex items-center justify-center">

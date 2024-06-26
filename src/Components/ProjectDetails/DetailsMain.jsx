@@ -40,16 +40,24 @@ const DetailsMain = ({ obj }) => {
         <div className="">
           <h3 className="h3">Technologies:</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
-            <SkillsCard
-              skills={programmingLanguageSkills}
-              title={"Programming Language"}
-            />
-            <SkillsCard skills={frontendSkills} title={"Front End"} />
-            <SkillsCard skills={backendSkills} title={"Back End"} />
-            <SkillsCard
-              skills={authenticationSkills}
-              title={"Authentication"}
-            />
+            {programmingLanguageSkills.length > 0 && (
+              <SkillsCard
+                skills={programmingLanguageSkills}
+                title={"Programming Language"}
+              />
+            )}
+            {frontendSkills.length > 0 && (
+              <SkillsCard skills={frontendSkills} title={"Front End"} />
+            )}
+            {backendSkills.length > 0 && (
+              <SkillsCard skills={backendSkills} title={"Back End"} />
+            )}
+            {authenticationSkills.length > 0 && (
+              <SkillsCard
+                skills={authenticationSkills}
+                title={"Authentication"}
+              />
+            )}
           </div>
         </div>
         {/* Packages */}
@@ -57,14 +65,18 @@ const DetailsMain = ({ obj }) => {
           <div className="">
             <h3 className="h3">Technologies:</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
-              <PackagesCard
-                technologies={obj?.packages?.frontend}
-                title={"Front End"}
-              />
-              <PackagesCard
-                technologies={obj?.packages?.backend}
-                title={"Back End"}
-              />
+              {obj?.packages?.frontend?.length > 0 && (
+                <PackagesCard
+                  technologies={obj?.packages?.frontend}
+                  title={"Front End"}
+                />
+              )}
+              {obj?.packages?.backend?.length > 0 && (
+                <PackagesCard
+                  technologies={obj?.packages?.backend}
+                  title={"Back End"}
+                />
+              )}
             </div>
           </div>
         </div>
