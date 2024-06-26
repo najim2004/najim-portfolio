@@ -30,7 +30,7 @@ const RightSideBar = () => {
       <div className="flex flex-wrap gap-2 justify-center">
         {profileTags?.map((tag, idx) => (
           <span
-            className="border-[1px] px-[2px] rounded-md border-border-b text-primary/80 font-medium text-[12px]"
+            className="border-[1px] px-[2px] rounded-md border-box-border text-primary/80 font-medium text-[12px]"
             key={idx}
           >
             {tag}

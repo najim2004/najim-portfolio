@@ -11,15 +11,16 @@ const projectList = [
       "React.js",
       "Tailwind",
       "Node.js",
-      "mongodb",
-      " Express",
+      "mongoDB",
+      " Express.js",
       "firebase",
       "jwt",
     ],
     skills: {
       frontend: ["React.js", "Tailwind", "HTML", "CSS"],
-      backend: ["Node.js", "Express", "Mongodb"],
+      backend: ["Node.js", "Express.js", "MongoDB"],
       authentication: ["Firebase", "JWT"],
+      programmingLanguage: ["JavaScript"],
     },
     packages: {
       frontend: [
@@ -46,22 +47,23 @@ const projectList = [
     title: "Voyage Volunteer",
     img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
     description:
-      "An web application developed using React.js, Tailwind, Node.js, mongodb, Express firebase jwt.",
+      "An web application developed using React.js, Tailwind, Node.js, mongoDB, Express.js firebase jwt.",
     githubUrl: "https://github.com/najim2004/voyage-volunteer",
     url: "https://voyage-volunteer.web.app/",
     tags: [
       "React.js",
       "Tailwind",
       "Node.js",
-      "mongodb",
-      " Express",
+      "mongoDB",
+      " Express.js",
       "firebase",
       "jwt",
     ],
     skills: {
       frontend: ["React.js", "Tailwind", "HTML", "CSS"],
-      backend: ["Node.js", "Express", "Mongodb"],
+      backend: ["Node.js", "Express.js", "MongoDB"],
       authentication: ["Firebase", "JWT"],
+      programmingLanguage: ["JavaScript"],
     },
     packages: {
       frontend: [
@@ -89,11 +91,12 @@ const projectList = [
       "Artistry Avenue aims to provide a seamless platform for artists and art enthusiasts to connect. Whether you're an artist looking to showcase your work or a collector searching for the perfect piece, Artistry Avenue has you covered. With a user-friendly interface, secure registration and login system, and a wide range of features including posting, updating, and deleting paintings, Artistry Avenue is your go-to destination for all things art.",
     githubUrl: "https://github.com/najim2004/artistryavenue-client",
     url: "https://artistry-avenue.web.app/",
-    tags: ["React", "Tailwind", "Node.js", "Express", "Mongodb"],
+    tags: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
     skills: {
       frontend: ["React.js", "Tailwind", "HTML", "CSS"],
-      backend: ["Node.js", "Express", "Mongodb"],
+      backend: ["Node.js", "Express.js", "MongoDB"],
       authentication: ["Firebase"],
+      programmingLanguage: ["JavaScript"],
     },
     packages: {
       frontend: [
@@ -120,13 +123,14 @@ const projectList = [
     description:
       "Welcome to Nexus Properties, where luxury meets convenience in the realm of real estate. Our platform is designed to provide a seamless experience for those seeking to buy or rent residential homes of exceptional quality. Below, you'll find a detailed overview of the features and characteristics of our website, along with information about the npm packages that power our platform.",
     githubUrl: "https://github.com/najim2004/Nexus-Properties",
-    url: "https://home-haven-e41db.web.app/",
+    url: "https://home-haven-e41DB.web.app/",
     tags: ["React", "Tailwind", "HTML", "CSS"],
     skills: {
       frontend: ["React.js", "Tailwind", "HTML", "CSS"],
       authentication: ["Firebase"],
+      programmingLanguage: ["JavaScript"],
     },
-    package: {
+    packages: {
       frontend: [
         "react-hook-form",
         "swiperjs/swiper-react",

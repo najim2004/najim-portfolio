@@ -3,9 +3,10 @@ import Link from "next/link";
 import React from "react";
 import SendEmail from "../UI/SendEmail";
 import { SiGmail } from "react-icons/si";
+import { LuArrowUpRight } from "react-icons/lu";
 const Contact = () => {
   return (
-    <div className="px-4 font-primary" id="contact">
+    <div className="px-4 font-primary mb-5" id="contact">
       <h3 className="title">Contact</h3>
       <p className="text-primary">
         Connect with me to explore exciting opportunities or discuss
@@ -20,10 +21,11 @@ const Contact = () => {
             key={idx}
             href={socialLink?.url}
             target="_blank"
-            className="bg-primary/80 hover:bg-primary/50 text-white flex gap-2 h-12 items-center justify-center rounded-xl"
+            className="bg-primary/80 group hover:bg-primary/50 text-white flex gap-2 h-12 items-center justify-center rounded-xl"
           >
             {socialLink?.icon}
             {socialLink?.name}
+            <LuArrowUpRight className="hidden lg:flex group-hover:scale-125 mb-3" />
           </Link>
         ))}
         <Link
@@ -31,10 +33,11 @@ const Contact = () => {
             "https://mail.google.com/mail/?view=cm&fs=1&to=najim.developer@gmail.com"
           }
           target="_blank"
-          className="bg-primary/80 hover:bg-primary/50 text-white flex gap-2 h-12 items-center justify-center rounded-xl"
+          className="bg-primary/80 group hover:bg-primary/50 text-white flex gap-2 h-12 items-center justify-center rounded-xl"
         >
           <SiGmail />
           Gmail
+          <LuArrowUpRight className="hidden lg:flex group-hover:scale-125 mb-3" />
         </Link>
       </div>
       <hr className="text-primary-bg max-w-full my-10 mx-4" />

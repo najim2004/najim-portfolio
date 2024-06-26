@@ -3,23 +3,23 @@ import { FaCommentAlt, FaFire, FaLightbulb, FaUser } from "react-icons/fa";
 const navList = [
   {
     name: "About",
-    to: "/#about",
+    to: "about",
     icon: <FaUser />,
     offset: 20,
   },
   {
     name: "Skills",
-    to: "/#skills",
+    to: "skills",
     icon: <FaLightbulb />,
   },
   {
     name: "Projects",
-    to: "/#projects",
+    to: "projects",
     icon: <FaFire />,
   },
   {
     name: "Contact",
-    to: "/#contact",
+    to: "contact",
     icon: <FaCommentAlt />,
   },
 ];

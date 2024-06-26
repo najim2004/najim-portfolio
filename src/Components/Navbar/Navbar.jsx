@@ -1,23 +1,24 @@
 "use client";
-
 import navList from "@/Data/navList";
-import Link from "next/link";
-import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [sectionId, setSectionId] = useState("/#about");
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 640px)" });
+
   return (
-    <div className="lg:w-full w-max z-50 h-14 flex items-center justify-center">
+    <div className="nav lg:w-full w-max !z-50 h-14 flex items-center justify-center">
       {navList?.map((item, idx) => (
         <Link
-          onClick={() => setSectionId(item.to)}
-          href={item.to}
+          activeClass="active"
+          to={item.to}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          containerId={!isSmallScreen ? "scrollable" : false}
           key={idx}
-          className={`text-secondary font-primary font-medium ${
-            sectionId == item.to
-              ? "text-primary bg-box-border duration-1000"
-              : ""
-          } h-full flex items-center justify-center rounded-lg px-5 gap-2`}
+          className={`text-secondary font-primary font-medium h-full flex items-center justify-center rounded-lg px-5 gap-2 cursor-pointer`}
         >
           {item.icon} {item.name}
         </Link>

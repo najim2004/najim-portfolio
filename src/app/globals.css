@@ -17,6 +17,9 @@
   .li {
     @apply font-medium text-primary/80;
   }
+  .nav .active {
+    @apply text-primary bg-box-border duration-700;
+  }
 }
 
 .n:hover .show {

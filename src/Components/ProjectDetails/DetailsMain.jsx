@@ -1,4 +1,23 @@
+"use client";
+
+import skillList from "@/Data/skillLits";
+import SkillsCard from "../UI/SkillsCard";
+import PackagesCard from "../UI/PackagesCard";
+import Note from "../UI/Note";
+
 const DetailsMain = ({ obj }) => {
+  const frontendSkills = skillList?.frontend?.filter((skill) =>
+    obj?.skills?.frontend?.includes(skill?.name)
+  );
+  const backendSkills = skillList?.backend?.filter((skill) =>
+    obj?.skills?.backend?.includes(skill?.name)
+  );
+  const programmingLanguageSkills = skillList?.programmingLanguage?.filter(
+    (skill) => obj?.skills?.programmingLanguage?.includes(skill?.name)
+  );
+  const authenticationSkills = skillList?.authentication?.filter((skill) =>
+    obj?.skills?.authentication?.includes(skill?.name)
+  );
   return (
     <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md p-10 font-primary">
       <div className="w-[700px] h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden">
@@ -9,7 +28,9 @@ const DetailsMain = ({ obj }) => {
           alt=""
         />
       </div>
+
       <div className="max-w-[700px] mx-auto">
+        <Note details="At any time new features may be added to this project or the project may be updated which may not be mentioned here" />
         {/* description */}
         <div className="">
           <h3 className="h3">Description:</h3>
@@ -17,45 +38,33 @@ const DetailsMain = ({ obj }) => {
         </div>
         {/* Project skills */}
         <div className="">
-          <h3 className="h3">Projects skills:</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3">
-            <div className="">
-              {obj?.skills?.frontend && <h4 className="h4">Front-End:</h4>}
-              <ul className="list-disc ml-8">
-                {obj?.skills?.frontend?.map((skill, idx) => {
-                  return (
-                    <li key={idx} className="li">
-                      {skill}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="">
-              {obj?.skills?.backend && <h4 className="h4">Back-End:</h4>}
-              <ul className="list-disc ml-8">
-                {obj?.skills?.backend?.map((skill, idx) => {
-                  return (
-                    <li key={idx} className="li">
-                      {skill}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="">
-              {obj?.skills?.authentication && (
-                <h4 className="h4">Authentication:</h4>
-              )}
-              <ul className="list-disc ml-8">
-                {obj?.skills?.authentication?.map((skill, idx) => {
-                  return (
-                    <li key={idx} className="li">
-                      {skill}
-                    </li>
-                  );
-                })}
-              </ul>
+          <h3 className="h3">Technologies:</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+            <SkillsCard
+              skills={programmingLanguageSkills}
+              title={"Programming Language"}
+            />
+            <SkillsCard skills={frontendSkills} title={"Front End"} />
+            <SkillsCard skills={backendSkills} title={"Back End"} />
+            <SkillsCard
+              skills={authenticationSkills}
+              title={"Authentication"}
+            />
+          </div>
+        </div>
+        {/* Packages */}
+        <div className="">
+          <div className="">
+            <h3 className="h3">Technologies:</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+              <PackagesCard
+                technologies={obj?.packages?.frontend}
+                title={"Front End"}
+              />
+              <PackagesCard
+                technologies={obj?.packages?.backend}
+                title={"Back End"}
+              />
             </div>
           </div>
         </div>
