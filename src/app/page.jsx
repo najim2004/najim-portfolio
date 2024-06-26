@@ -1,8 +1,8 @@
 "use client";
 
-import GithubStatus from "@/components/GithubStatus/GithubStatus";
-import MainContent from "@/components/MainContent/MainContent";
-import RightSideBar from "@/components/RightSideBar/RightSideBar";
+import GithubStatus from "@/Components/GithubStatus/GithubStatus";
+import MainContent from "@/Components/MainContent/MainContent";
+import RightSideBar from "@/Components/RightSideBar/RightSideBar";
 
 const page = () => {
   return (
