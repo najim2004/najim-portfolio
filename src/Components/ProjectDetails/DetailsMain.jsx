@@ -20,10 +20,10 @@ const DetailsMain = ({ obj }) => {
   );
   return (
     <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md p-10 font-primary">
-      <div className="w-[700px] h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden">
+      <div className="max-w-[700px] max-h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          className="max-w-[700px] lg:w-[700px] max-h-[400px]"
+          className="min-w-full lg:w-[700px] max-h-[400px]"
           src={obj?.img}
           alt=""
         />

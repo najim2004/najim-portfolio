@@ -15,17 +15,17 @@ const Project = () => {
         {projectList?.map((project) => (
           <div
             key={project?.id}
-            className="min-h-[150px] max-h-[200px] border border-box-border rounded-2xl overflow-hidden flex gap-4"
+            className="min-h-[150px] lg:max-h-[200px] border border-box-border rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
           >
-            <div className="w-[250px] bg-gray-200">
+            <div className="w-full lg:w-[280px] lg:h-full h-[200px] bg-gray-200 group overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                className="h-full w-[250px]"
+                className="h-full w-full lg:w-[280px] group-hover:scale-110"
                 src={project.img}
                 alt={project.title}
               />
             </div>
-            <div className="flex flex-1 flex-col justify-center py-5">
+            <div className="flex flex-1 flex-col justify-center px-3 lg:py-5">
               <h3 className="text-lg font-medium text-primary">
                 {project?.title}
               </h3>
@@ -43,7 +43,7 @@ const Project = () => {
                 ))}
               </div>
             </div>
-            <div className="text-2xl flex lg:flex-col justify-center items-center gap-3 lg:pr-2">
+            <div className="text-2xl flex lg:flex-col justify-end lg:justify-center items-center gap-3 m-4 lg:pr-2 lg:m-0">
               <Link
                 target="_blank"
                 data-tooltip-id="live-site"

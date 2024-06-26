@@ -38,7 +38,7 @@ const RightSideBar = () => {
         ))}
       </div>
       <div className="flex gap-2 justify-center mt-5 flex-wrap">
-        <Link href={"mailto:najim.developer@gmail.com"}>
+        <Link href={"mailto:najim.developer@gmail.com"} target="_blank">
           <button className="bg-primary text-sm hover:bg-primary/70 duration-500 text-white w-[170px] rounded-lg flex gap-2 justify-center items-center h-10 font-medium">
             <FaEnvelope />
             Contact

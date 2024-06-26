@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import { LuArrowRight } from "react-icons/lu";
 
 const About = () => {
   return (
@@ -29,6 +31,14 @@ const About = () => {
         exceptional digital experiences, I am committed to delivering
         high-quality work that exceeds expectations.
       </p>
+      <div className="flex group justify-end mt-5 font-medium">
+        <Link
+          className="flex items-center justify-center gap-1 group-hover:scale-110 duration-1000"
+          href={"/about"}
+        >
+          More Details <LuArrowRight className="text-xl" />
+        </Link>
+      </div>
     </div>
   );
 };

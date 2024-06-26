@@ -38,7 +38,9 @@ const DetailsHeader = ({ title, desc, githubUrl, liveSite }) => {
           </Link>
         </div>
       </div>
-      <h3 className="text-5xl text-primary font-bold mt-5">{title}</h3>
+      <h3 className="text-3xl lg:text-5xl text-primary font-bold mt-5">
+        {title}
+      </h3>
       <p className="text- primary mt-3 text-red-500">{desc}</p>
       <Tooltip id="live-site" />
     </div>

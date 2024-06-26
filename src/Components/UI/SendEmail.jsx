@@ -18,8 +18,8 @@ const SendEmail = () => {
   };
 
   return (
-    <section className="font-primary border border-box-border lg:p-5">
-      <div className="max-w-4xl mx-auto px-4">
+    <section className="font-primary border border-box-border p-3 lg:p-5">
+      <div className="max-w-4xl mx-auto">
         <h1 className="text-red-500">This feature coming soon...!!</h1>
         <h2 className="text-2xl font-bold mb-8">Send Message</h2>
         <form
@@ -58,7 +58,7 @@ const SendEmail = () => {
               className="mt-1 block w-full h-10 border border-img-border bg-white"
             />
           </div>
-          <div className="col-span-2">
+          <div className="lg:col-span-2">
             <label
               htmlFor="message"
               className="block text-sm font-medium text-gray-700"
@@ -71,10 +71,10 @@ const SendEmail = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="mt-1 block w-full border border-img-border shadow-sm bg-white resize-none"
+              className="mt-1 block w-full h-[160px] border border-img-border shadow-sm bg-white resize-none"
             ></textarea>
           </div>
-          <div className="col-span-2">
+          <div className="lg:col-span-2">
             <button
               type="submit"
               className="w-full flex justify-center py-2 px-4 bg-primary/80 hover:bg-primary/50 text-white"
