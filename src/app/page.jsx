@@ -1,9 +1,8 @@
 "use client";
 
-import GithubStatus from "@/Components/GithubStatus/GithubStatus";
-import MainContent from "@/Components/MainContent/MainContent";
-import RightSideBar from "@/Components/RightSideBar/RightSideBar";
-import { useEffect } from "react";
+import GithubStatus from "@/components/GithubStatus/GithubStatus";
+import MainContent from "@/components/MainContent/MainContent";
+import RightSideBar from "@/components/RightSideBar/RightSideBar";
 
 const page = () => {
   return (

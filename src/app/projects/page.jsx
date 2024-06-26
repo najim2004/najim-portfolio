@@ -1,5 +1,5 @@
-import Header from "@/Components/Projects/Header";
-import Main from "@/Components/Projects/Main";
+import Header from "@/components/Projects/Header";
+import Main from "@/components/Projects/Main";
 import React from "react";
 
 const page = () => {
