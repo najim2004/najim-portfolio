@@ -1,4 +1,5 @@
 "use client";
+import CopyRights from "@/Components/CopyRights/CopyRights";
 import DetailsHeader from "@/Components/ProjectDetails/DetailsHeader";
 import DetailsMain from "@/Components/ProjectDetails/DetailsMain";
 import projectList from "@/Data/projectList";
@@ -13,7 +14,8 @@ const ProjectDetails = () => {
     setData(findProject);
   }, [id]);
   return (
-    <div>
+    <div className="relative dark:bg-primary-dark">
+      <div className="rectangle"></div>
       <div className="max-w-[1000px] mx-auto py-10 font-primary space-y-6 p-3">
         <DetailsHeader
           title={data?.title}
@@ -22,6 +24,7 @@ const ProjectDetails = () => {
           desc={"This page is under construction!"}
         />
         <DetailsMain obj={data} />
+        <CopyRights />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import { Tooltip } from "react-tooltip";
 const DetailsHeader = ({ title, desc, githubUrl, liveSite }) => {
   const router = useRouter();
   return (
-    <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md py-6 px-2 lg:p-10 flex flex-col justify-center items-start">
+    <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border shadow-md py-6 px-2 lg:p-10 flex flex-col justify-center items-start">
       <div className=" flex justify-between w-full">
         <button
           onClick={() => router.back()}

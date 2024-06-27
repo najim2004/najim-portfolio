@@ -7,7 +7,8 @@ export const metadata = {
 };
 const Projects = () => {
   return (
-    <div>
+    <div className="relative dark:bg-primary-dark">
+      <div className="absolute rectangle inset-0 h-screen"></div>
       <div className="max-w-[1000px] mx-auto py-10 font-primary space-y-6 p-3">
         <ProjectsHeader />
         <ProjectMain />

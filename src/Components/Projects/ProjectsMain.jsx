@@ -4,7 +4,7 @@ import ProjectCard from "../UI/ProjectCard";
 
 const ProjectMain = () => {
   return (
-    <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md">
+    <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border shadow-md">
       <div className="lg:py-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-6 p-3">
         {projectList?.map((project) => (
           <ProjectCard key={project?.id} project={project} />

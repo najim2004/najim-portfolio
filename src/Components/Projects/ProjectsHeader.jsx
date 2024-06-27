@@ -5,7 +5,7 @@ import { FaChevronLeft } from "react-icons/fa";
 const ProjectsHeader = () => {
   const router = useRouter();
   return (
-    <div className="min-h-[150px] bg-secondary-bg rounded-3xl border-2 border-box-border shadow-md py-6 px-2 lg:p-10 flex flex-col justify-center items-start">
+    <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border shadow-md py-6 px-2 lg:p-10 flex flex-col justify-center items-start">
       <button
         onClick={() => router.back()}
         className="flex items-center justify-center gap-2 text-xl font-medium text-secondary"

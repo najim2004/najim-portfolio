@@ -5,6 +5,7 @@ module.exports = {
     "./src/Components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -15,10 +16,17 @@ module.exports = {
         secondary: "#64748b",
         "primary-bg": "#FAFAFA",
         "secondary-bg": "#F8FAFC",
+        "primary-dark": "#0F172A",
+        "secondary-dark": "#1E293B",
         "img-border": "#94A3B8",
         "box-border": "#E2E8F0",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false, // Disable DaisyUI themes
+    logs: false, // Disable console logs from DaisyUI (optional)
+    darkTheme: false, // Disable dark mode handling
+  },
 };

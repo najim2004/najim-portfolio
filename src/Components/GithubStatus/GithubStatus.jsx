@@ -4,7 +4,7 @@ import gitHubProfileImg from "../../assets/github.jpg";
 import Counter from "../UI/Counter";
 const GithubStatus = () => {
   return (
-    <div className="font-primary text-primary flex justify-center items-center gap-4 border-box-border border-2 shadow-md rounded-3xl w-full min-h-[100px] py-5 bg-secondary-bg">
+    <div className="font-primary text-primary flex justify-center items-center gap-4 border-box-border border-2 shadow-md rounded-3xl w-full min-h-[100px] py-5 bg-secondary-bg dark:bg-secondary-dark">
       <div className="size-28 rounded-full bg-gray-200">
         <Image
           src={gitHubProfileImg}
