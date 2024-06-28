@@ -7,14 +7,14 @@ const Navbar = () => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <div className="nav lg:w-full w-max !z-50 h-14 flex items-center justify-center">
+    <div className="nav lg:w-full md:w-full !z-50 h-14 flex items-center md:justify-center lg:justify-center">
       {navList?.map((item, idx) => (
         <Link
           activeClass="active"
           to={item.to}
           spy={true}
           smooth={true}
-          offset={-97}
+          offset={-100}
           duration={500}
           containerId={!isSmallScreen ? "scrollable" : false}
           key={idx}
