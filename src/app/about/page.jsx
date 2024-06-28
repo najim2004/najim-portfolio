@@ -6,7 +6,7 @@ const About = () => {
     <div className="relative dark:bg-primary-dark">
       <div className="absolute rectangle inset-0 h-screen"></div>
       <div className="flex flex-col justify-center items-center h-screen space-y-6">
-        <h3 className="text-4xl text-center font-bold font-primary">
+        <h3 className="text-4xl text-center font-bold font-primary dark:text-primary-bg">
           Coming soon......
         </h3>
         <Link

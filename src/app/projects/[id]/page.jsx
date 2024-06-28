@@ -14,7 +14,7 @@ const ProjectDetails = () => {
     setData(findProject);
   }, [id]);
   return (
-    <div className="relative dark:bg-primary-dark">
+    <div className="relative duration-300 dark:bg-primary-dark">
       <div className="rectangle"></div>
       <div className="max-w-[1000px] mx-auto py-10 font-primary space-y-6 p-3">
         <DetailsHeader

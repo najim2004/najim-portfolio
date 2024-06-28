@@ -4,9 +4,11 @@ import { FaDownload } from "react-icons/fa";
 
 const CoursesAndCertificates = () => {
   return (
-    <div className="flex-1 font-primary border-box-border dark:border-secondary/50 border-2 shadow-md rounded-3xl w-full min-h-[100px] bg-secondary-bg dark:bg-secondary-dark">
-      <div className="w-full h-16 flex justify-center items-center border-b border-box-border dark:border-secondary/50 bg-secondary/10 rounded-t-3xl">
-        <h3 className="text-xl font-medium">Courses & Certificates</h3>
+    <div className="flex-1 font-primary border-box-border dark:border-secondary/50 border-2 shadow-md rounded-3xl w-full min-h-[100px] bg-secondary-bg dark:bg-secondary-dark duration-300">
+      <div className="w-full h-16 flex justify-center items-center border-b border-box-border dark:border-secondary/50 bg-secondary/10 dark:bg-secondary/50 rounded-t-3xl">
+        <h3 className="text-xl font-medium duration-300 dark:text-primary-bg">
+          Courses & Certificates
+        </h3>
       </div>
       <div className="p-3">
         <div className="border border-box-border dark:border-secondary/50 p-3 rounded-xl">
@@ -27,7 +29,7 @@ const CoursesAndCertificates = () => {
             }
             target="_blank"
           >
-            <button className="bg-white/60 text-sm hover:bg-primary/70 dar:duration-300 dark:text-primary-bg duration-500 dark:bg-secondary-dark dark:border-secondary/50 dark:hover:text-primary-bg/80 text-primary hover:text-white rounded-lg flex gap-2 justify-center items-center w-full h-10 font-medium border border-box-border active:scale-105">
+            <button className="bg-primary text-primary-bg text-sm hover:bg-primary/60 dar:duration-300 duration-500 dark:bg-primary-bg dark:border-secondary/50 dark:hover:bg-primary-bg/80 dark:text-primary hover:text-white rounded-lg flex gap-2 justify-center items-center w-full h-10 font-medium border border-box-border active:scale-105">
               <FaDownload />
               Certificate
             </button>

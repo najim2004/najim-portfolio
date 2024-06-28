@@ -14,12 +14,16 @@ const ThemeToggle = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted)
+    return (
+      <div className="w-[70px] flex">
+        <span className="loading loading-ring loading-lg text-primary dark:text-primary-bg"></span>
+      </div>
+    );
 
-  console.log(theme);
   return (
     <div className="w-[70px] flex">
-      <label className="swap swap-rotate overflow-hidden">
+      <label className="swap swap-rotate overflow-hidden text-primary dark:text-primary-bg duration-300">
         <input
           type="checkbox"
           onChange={() => setTheme(theme === "light" ? "dark" : "light")}

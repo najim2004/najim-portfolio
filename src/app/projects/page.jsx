@@ -1,3 +1,4 @@
+import CopyRights from "@/Components/CopyRights/CopyRights";
 import ProjectsHeader from "@/Components/Projects/ProjectsHeader";
 import ProjectMain from "@/Components/Projects/ProjectsMain";
 import Main from "@/Components/Projects/ProjectsMain";
@@ -12,6 +13,7 @@ const Projects = () => {
       <div className="max-w-[1000px] mx-auto py-10 font-primary space-y-6 p-3">
         <ProjectsHeader />
         <ProjectMain />
+        <CopyRights />
       </div>
     </div>
   );

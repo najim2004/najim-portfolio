@@ -35,7 +35,7 @@ const Project = () => {
               <div className="flex gap-2 flex-wrap">
                 {project?.tags?.map((tag, idx) => (
                   <span
-                    className="border border-box-border font-medium text-sm bg-box-border duration-300 dark:bg-box-border/10 dark:border-secondary-dark text-primary dark:text-gray-400 rounded-lg px-1"
+                    className="font-medium text-sm bg-box-border duration-300 dark:bg-box-border/10 text-primary dark:text-gray-400 rounded-lg px-1"
                     key={idx}
                   >
                     {tag}

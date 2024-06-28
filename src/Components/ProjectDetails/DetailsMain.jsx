@@ -34,7 +34,9 @@ const DetailsMain = ({ obj }) => {
         {/* description */}
         <div className="">
           <h3 className="h3">Description:</h3>
-          <p className="text-secondary">{obj?.description}</p>
+          <p className="text-secondary duration-300 dark:text-primary-bg/80">
+            {obj?.description}
+          </p>
         </div>
         {/* Project skills */}
         <div className="">
