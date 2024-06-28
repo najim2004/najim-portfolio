@@ -4,7 +4,7 @@ import SkillsCard from "../UI/SkillsCard";
 
 const Skills = () => {
   return (
-    <div className="px-4 font-primary" id="skills">
+    <div className="px-4 font-primary">
       <h3 className="title duration-300 dark:text-primary-bg">Skills</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <SkillsCard

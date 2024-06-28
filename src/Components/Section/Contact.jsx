@@ -6,7 +6,7 @@ import { SiGmail } from "react-icons/si";
 import { LuArrowUpRight } from "react-icons/lu";
 const Contact = () => {
   return (
-    <div className="px-4 font-primary mb-5" id="contact">
+    <div className="px-4 font-primary mb-5">
       <h3 className="title duration-300 dark:text-primary-bg">Contact</h3>
       <p className="text-primary duration-300 dark:text-primary-bg">
         Connect with me to explore exciting opportunities or discuss

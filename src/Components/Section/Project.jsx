@@ -9,7 +9,7 @@ import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 const Project = () => {
   return (
-    <div id="projects" className="px-4 font-primary">
+    <div className="px-4 font-primary">
       <h3 className="title duration-300 dark:text-primary-bg">Project</h3>
       <div className="w-full flex flex-col gap-4">
         {projectList?.map((project) => (
