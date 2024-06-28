@@ -14,7 +14,7 @@ const Navbar = () => {
           to={item.to}
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-97}
           duration={500}
           containerId={!isSmallScreen ? "scrollable" : false}
           key={idx}
