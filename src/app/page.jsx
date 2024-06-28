@@ -11,7 +11,7 @@ const Home = () => {
     <div className="relative duration-300 dark:bg-primary-dark lg:h-screen flex items-center justify-center">
       <div className="absolute rectangle"></div>
       <div className="grid p-3 grid-cols-1 lg:grid-cols-12 lg:px-10 gap-6 container mx-auto">
-        <div className="w-full lg:col-span-3 min-h-[calc(100vh-90px)] lg:max-h-[calc(100vh-96px)] rounded-3xl border-2 border-box-border duration-300 dark:border-secondary/50 shadow-md lg:overflow-y-scroll">
+        <div className="w-full lg:col-span-3 lg:min-h-[calc(100vh-90px)] lg:max-h-[calc(100vh-96px)] rounded-3xl border-2 border-box-border duration-300 dark:border-secondary/50 shadow-md lg:overflow-y-scroll">
           <RightSideBar />
         </div>
         <div
