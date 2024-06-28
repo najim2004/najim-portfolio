@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @layer base {
   .title {
     @apply text-[30px] font-bold text-primary mb-7 font-primary;
@@ -34,5 +40,5 @@
   opacity: 0.08;
   inset: 0px;
   position: fixed;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }

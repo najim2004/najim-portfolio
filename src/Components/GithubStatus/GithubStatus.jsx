@@ -4,7 +4,7 @@ import gitHubProfileImg from "../../assets/github.jpg";
 import Counter from "../UI/Counter";
 const GithubStatus = () => {
   return (
-    <div className="font-primary text-primary flex justify-center items-center gap-4 border-box-border border-2 shadow-md rounded-3xl w-full min-h-[100px] py-5 bg-secondary-bg dark:bg-secondary-dark">
+    <div className="font-primary text-primary flex justify-center items-center gap-4 border-box-border border-2 shadow-md rounded-3xl w-full min-h-[100px] py-5 bg-secondary-bg dark:bg-secondary-dark dark:border-secondary/50">
       <div className="size-28 rounded-full bg-gray-200">
         <Image
           src={gitHubProfileImg}
@@ -12,7 +12,7 @@ const GithubStatus = () => {
           className="rounded-full object-cover object-center size-28"
         />
       </div>
-      <div className="">
+      <div className="text-primary duration-300 dark:text-primary-bg">
         <h3 className="text-xl font-medium">GitHub Status</h3>
         <table>
           <tbody>

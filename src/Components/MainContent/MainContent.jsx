@@ -8,15 +8,15 @@ import Contact from "../Section/Contact";
 const MainContent = () => {
   return (
     <div className="relative">
-      <div className="sticky top-0 overflow-x-scroll lg:overflow-hidden w-full rounded-t-2xl p-2 shadow-md bg-secondary-bg dark:bg-secondary-dark border-b border-box-border dark:border-secondary/50">
+      <div className="sticky top-0 overflow-x-scroll lg:overflow-hidden w-full rounded-t-2xl p-2 shadow-md bg-secondary-bg duration-300 dark:bg-secondary-dark border-b border-box-border dark:border-secondary/50">
         <Navbar />
       </div>
       <About />
-      <hr className="border-box-border dark:border-secondary/50 max-w-full my-10 mx-4" />
+      <hr className="border-box-border duration-300 dark:border-secondary/50 max-w-full my-10 mx-4" />
       <Skills />
-      <hr className="border-box-border dark:border-secondary/50 max-w-full my-10 mx-4" />
+      <hr className="border-box-border duration-300 dark:border-secondary/50 max-w-full my-10 mx-4" />
       <Project />
-      <hr className="border-box-border dark:border-secondary/50 max-w-full my-10 mx-4" />
+      <hr className="border-box-border duration-300 dark:border-secondary/50 max-w-full my-10 mx-4" />
       <Contact />
     </div>
   );

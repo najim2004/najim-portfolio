@@ -10,12 +10,12 @@ import "react-tooltip/dist/react-tooltip.css";
 const Project = () => {
   return (
     <div id="projects" className="px-4 font-primary">
-      <h3 className="title">Project</h3>
+      <h3 className="title duration-300 dark:text-primary-bg">Project</h3>
       <div className="w-full flex flex-col gap-4">
         {projectList?.map((project) => (
           <div
             key={project?.id}
-            className="min-h-[150px] lg:max-h-[200px] border border-box-border rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
+            className="min-h-[150px] lg:max-h-[200px] border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
           >
             <div className="w-full lg:w-[280px] lg:h-full h-[200px] bg-gray-200 group overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -26,16 +26,16 @@ const Project = () => {
               />
             </div>
             <div className="flex flex-1 flex-col justify-center px-3 lg:py-5">
-              <h3 className="text-lg font-medium text-primary">
+              <h3 className="text-lg font-medium text-primary duration-300 dark:text-primary-bg">
                 {project?.title}
               </h3>
-              <p className="text-secondary leading-5 my-2 text-sm line-clamp-3">
+              <p className="text-secondary leading-5 my-2 text-sm line-clamp-3 duration-300 dark:text-gray-400">
                 {project?.description}
               </p>
               <div className="flex gap-2 flex-wrap">
                 {project?.tags?.map((tag, idx) => (
                   <span
-                    className="border border-box-border font-medium text-sm bg-box-border rounded-lg px-1"
+                    className="border border-box-border font-medium text-sm bg-box-border duration-300 dark:bg-box-border/10 dark:border-secondary-dark text-primary dark:text-gray-400 rounded-lg px-1"
                     key={idx}
                   >
                     {tag}
@@ -43,7 +43,7 @@ const Project = () => {
                 ))}
               </div>
             </div>
-            <div className="text-2xl flex lg:flex-col justify-end lg:justify-center items-center gap-3 m-4 lg:pr-2 lg:m-0">
+            <div className="text-2xl flex lg:flex-col justify-end lg:justify-center items-center gap-3 m-4 lg:pr-2 lg:m-0 text-primary duration-300 dark:text-primary-bg">
               <Link
                 target="_blank"
                 data-tooltip-id="live-site"
@@ -75,7 +75,7 @@ const Project = () => {
           </div>
         ))}
       </div>
-      <div className="flex group justify-end mt-5 font-medium">
+      <div className="flex group justify-end mt-5 font-medium text-primary duration-300 dark:text-primary-bg">
         <Link
           className="flex items-center justify-center gap-1 group-hover:scale-110 duration-1000"
           href={"/projects"}
