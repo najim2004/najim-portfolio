@@ -3,9 +3,6 @@ import ProjectsHeader from "@/Components/Projects/ProjectsHeader";
 import ProjectMain from "@/Components/Projects/ProjectsMain";
 import Main from "@/Components/Projects/ProjectsMain";
 import React from "react";
-export const metadata = {
-  title: "Projects | Najim | Portfolio",
-};
 const Projects = () => {
   return (
     <div className="relative dark:bg-primary-dark">

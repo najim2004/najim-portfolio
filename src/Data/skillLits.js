@@ -10,7 +10,7 @@ const skillList = {
     },
     {
       name: "HTML",
-      url: "/skills/HTML.svg",
+      url: "/skills/html.svg",
     },
     {
       name: "CSS",
