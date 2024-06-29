@@ -16,7 +16,7 @@ const Navbar = () => {
           activeClass={"active"}
           offset={-100}
           smooth={true}
-          containerId={!isSmallScreen ? "scrollable" : false}
+          containerId={"scrollable"}
           key={idx}
           className={`text-secondary font-primary font-medium h-full flex items-center justify-center rounded-lg px-5 gap-2 cursor-pointer`}
         >
