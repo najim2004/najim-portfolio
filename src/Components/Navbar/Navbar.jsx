@@ -1,6 +1,6 @@
 "use client";
 import navList from "@/Data/navList";
-import Link from "next/link";
+import { Link } from "react-scroll";
 // import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
