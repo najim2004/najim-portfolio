@@ -24,6 +24,8 @@ const RightSideBar = () => {
       {/* image */}
 
       <Image
+        width={500}
+        height={500}
         className="object-top size-[250px] rounded-full object-cover border-4 border-img-border duration-300 dark:border-box-border shadow-lg"
         src={Profile}
         alt="Najim"

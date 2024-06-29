@@ -7,6 +7,8 @@ const GithubStatus = () => {
     <div className="font-primary text-primary flex justify-center items-center gap-4 border-box-border border-2 shadow-md rounded-3xl w-full min-h-[100px] py-5 bg-secondary-bg dark:bg-secondary-dark dark:border-secondary/50 duration-300">
       <div className="size-28 rounded-full bg-gray-200">
         <Image
+          width={500}
+          height={500}
           src={gitHubProfileImg}
           alt="najim github profile"
           className="rounded-full object-cover object-center size-28"

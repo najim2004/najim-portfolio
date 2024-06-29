@@ -4,6 +4,7 @@ import skillList from "@/Data/skillLits";
 import SkillsCard from "../UI/SkillsCard";
 import PackagesCard from "../UI/PackagesCard";
 import Note from "../UI/Note";
+import Image from "next/image";
 
 const DetailsMain = ({ obj }) => {
   const frontendSkills = skillList?.frontend?.filter((skill) =>
@@ -21,11 +22,12 @@ const DetailsMain = ({ obj }) => {
   return (
     <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border shadow-md p-10 font-primary">
       <div className="max-w-[700px] max-h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
+          width={500}
+          height={500}
           className="min-w-full lg:w-[700px] max-h-[400px]"
           src={obj?.img}
-          alt=""
+          alt={obj.title}
         />
       </div>
 

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { GoInfo } from "react-icons/go";
 import { LuExternalLink, LuGithub } from "react-icons/lu";
@@ -8,10 +9,11 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="border-2 border-box-border duration-300 dark:border-secondary/50 min-h-[200px] rounded-2xl font-primary flex flex-col">
       <div className="w-full h-[200px] group overflow-hidden bg-gray-200 rounded-t-2xl">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={project?.img}
-          alt=""
+          alt="project Image"
+          width={500}
+          height={200}
           className="w-full h-[200px] group-hover:scale-110 duration-1000"
         />
       </div>

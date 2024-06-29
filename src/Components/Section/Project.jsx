@@ -7,6 +7,7 @@ import { LuArrowRight, LuExternalLink, LuGithub } from "react-icons/lu";
 import { GoInfo } from "react-icons/go";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
+import Image from "next/image";
 const Project = () => {
   return (
     <div className="px-4 font-primary">
@@ -18,8 +19,9 @@ const Project = () => {
             className="min-h-[150px] lg:max-h-[200px] border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
           >
             <div className="w-full lg:w-[280px] lg:h-full h-[200px] bg-gray-200 group overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
+                width={500}
+                height={500}
                 className="h-full w-full lg:w-[280px] group-hover:scale-110"
                 src={project.img}
                 alt={project.title}
