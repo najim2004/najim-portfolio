@@ -7,7 +7,7 @@ const CopyRights = () => {
       <h3 className="text-secondary duration-300 dark:text-primary-bg flex-1 text-center">
         &copy; {new Date().getFullYear()} Najim | Portfolio
       </h3>
-      {/* <ThemeToggle /> */}
+      <ThemeToggle />
     </div>
   );
 };
