@@ -1,7 +1,6 @@
 import CopyRights from "@/components/CopyRights/CopyRights";
 import ProjectsHeader from "@/components/Projects/ProjectsHeader";
 import ProjectMain from "@/components/Projects/ProjectsMain";
-import Main from "@/components/Projects/ProjectsMain";
 import React from "react";
 const Projects = () => {
   return (
