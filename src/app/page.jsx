@@ -1,5 +1,4 @@
 "use client";
-
 import CopyRights from "@/components/CopyRights/CopyRights";
 import CoursesAndCertificates from "@/components/CoursesAndCertificates/CoursesAndCertificates";
 import GithubStatus from "@/components/GithubStatus/GithubStatus";
