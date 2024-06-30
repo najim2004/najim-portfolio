@@ -2,7 +2,7 @@ const projectList = [
   {
     id: "1",
     title: "MultiCreatify",
-    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
+    img: "https://i.ibb.co/SwQKmtX/Home-Multi-Creatify.png",
     description:
       "A comprehensive solution to monitor employee workload, manage payroll, and maintain records of employee activities and contracts. The system offers functionalities for employees to log their workflow, HR to manage payments and verify employees, and admins to oversee all activities.",
     githubUrl: "https://github.com/najim2004/MultiCreatify-client",
@@ -45,7 +45,7 @@ const projectList = [
   {
     id: "2",
     title: "Voyage Volunteer",
-    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
+    img: "https://i.ibb.co/0nd7pdS/Voyage-Volunteer-Home.png",
     description:
       "An web application developed using React.js, Tailwind, Node.js, mongoDB, Express.js firebase jwt.",
     githubUrl: "https://github.com/najim2004/voyage-volunteer",
@@ -86,7 +86,7 @@ const projectList = [
   {
     id: "3",
     title: "Artistry Avenue",
-    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
+    img: "https://i.ibb.co/9TX2F8V/Artistry-Avenue-Home.png",
     description:
       "Artistry Avenue aims to provide a seamless platform for artists and art enthusiasts to connect. Whether you're an artist looking to showcase your work or a collector searching for the perfect piece, Artistry Avenue has you covered. With a user-friendly interface, secure registration and login system, and a wide range of features including posting, updating, and deleting paintings, Artistry Avenue is your go-to destination for all things art.",
     githubUrl: "https://github.com/najim2004/artistryavenue-client",
@@ -119,7 +119,7 @@ const projectList = [
   {
     id: "4",
     title: "Nexus Properties",
-    img: "https://www.shutterstock.com/image-vector/photo-coming-soon-symbol-600nw-161251868.jpg",
+    img: "https://i.ibb.co/kK9Vzk1/Nexus-Properties-Home.png",
     description:
       "Welcome to Nexus Properties, where luxury meets convenience in the realm of real estate. Our platform is designed to provide a seamless experience for those seeking to buy or rent residential homes of exceptional quality. Below, you'll find a detailed overview of the features and characteristics of our website, along with information about the npm packages that power our platform.",
     githubUrl: "https://github.com/najim2004/Nexus-Properties",
