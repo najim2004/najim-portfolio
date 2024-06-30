@@ -20,7 +20,7 @@ const DetailsMain = ({ obj }) => {
     obj?.skills?.authentication?.includes(skill?.name)
   );
   return (
-    <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border shadow-md p-10 font-primary">
+    <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border duration-300 dark:border-secondary/50 shadow-md p-10 font-primary">
       <div className="max-w-[700px] max-h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden">
         <Image
           width={500}

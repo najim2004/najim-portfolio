@@ -1,10 +1,10 @@
 "use client";
 
-import CopyRights from "@/Components/CopyRights/CopyRights";
-import CoursesAndCertificates from "@/Components/CoursesAndCertificates/CoursesAndCertificates";
-import GithubStatus from "@/Components/GithubStatus/GithubStatus";
-import MainContent from "@/Components/MainContent/MainContent";
-import RightSideBar from "@/Components/RightSideBar/RightSideBar";
+import CopyRights from "@/components/CopyRights/CopyRights";
+import CoursesAndCertificates from "@/components/CoursesAndCertificates/CoursesAndCertificates";
+import GithubStatus from "@/components/GithubStatus/GithubStatus";
+import MainContent from "@/components/MainContent/MainContent";
+import RightSideBar from "@/components/RightSideBar/RightSideBar";
 
 const Home = () => {
   return (

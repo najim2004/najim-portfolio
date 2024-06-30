@@ -1,7 +1,7 @@
-import CopyRights from "@/Components/CopyRights/CopyRights";
-import ProjectsHeader from "@/Components/Projects/ProjectsHeader";
-import ProjectMain from "@/Components/Projects/ProjectsMain";
-import Main from "@/Components/Projects/ProjectsMain";
+import CopyRights from "@/components/CopyRights/CopyRights";
+import ProjectsHeader from "@/components/Projects/ProjectsHeader";
+import ProjectMain from "@/components/Projects/ProjectsMain";
+import Main from "@/components/Projects/ProjectsMain";
 import React from "react";
 const Projects = () => {
   return (

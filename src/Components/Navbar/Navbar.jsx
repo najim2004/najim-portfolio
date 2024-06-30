@@ -14,7 +14,7 @@ const Navbar = () => {
           duration={700}
           spy={true}
           activeClass={"active"}
-          offset={!isSmallScreen ? -20 : -100}
+          offset={!isSmallScreen ? -25 : -100}
           smooth={true}
           containerId={!isSmallScreen ? "scrollable" : false}
           key={idx}
