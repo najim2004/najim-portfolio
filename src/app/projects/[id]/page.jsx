@@ -1,8 +1,9 @@
 "use client";
+
+import projectList from "@/Data/projectList";
 import CopyRights from "@/components/CopyRights/CopyRights";
 import DetailsHeader from "@/components/ProjectDetails/DetailsHeader";
 import DetailsMain from "@/components/ProjectDetails/DetailsMain";
-import projectList from "@/Data/projectList";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
