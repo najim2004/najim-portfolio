@@ -23,8 +23,8 @@ const Project = () => {
                 width={500}
                 height={500}
                 className="h-full w-full lg:w-[280px] group-hover:scale-110"
-                src={project.img}
-                alt={project.title}
+                src={project?.img}
+                alt={project?.title || ""}
               />
             </div>
             <div className="flex flex-1 flex-col justify-center px-3 lg:py-5">

@@ -27,7 +27,7 @@ const DetailsMain = ({ obj }) => {
           height={500}
           className="min-w-full lg:w-[700px] max-h-[400px]"
           src={obj?.img}
-          alt={obj.title}
+          alt={obj?.title || ""}
         />
       </div>
 
