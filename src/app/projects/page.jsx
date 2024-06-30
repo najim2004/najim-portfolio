@@ -1,6 +1,6 @@
-import CopyRights from "@/components/CopyRights/CopyRights";
-import ProjectsHeader from "@/components/Projects/ProjectsHeader";
-import ProjectMain from "@/components/Projects/ProjectsMain";
+import CopyRights from "@/Components/CopyRights/CopyRights";
+import ProjectsHeader from "@/Components/Projects/ProjectsHeader";
+import ProjectMain from "@/Components/Projects/ProjectsMain";
 
 const Projects = () => {
   return (
