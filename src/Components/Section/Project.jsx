@@ -22,7 +22,7 @@ const Project = () => {
               <Image
                 width={500}
                 height={500}
-                className="h-full w-full object-cover object-top lg:w-[280px] duration-1000 group-hover:scale-110"
+                className="h-full w-full object-cover object-top lg:w-[280px] duration-1000 group-hover:scale-105"
                 src={project?.img}
                 alt={project?.title || ""}
               />
