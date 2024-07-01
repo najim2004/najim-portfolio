@@ -18,11 +18,11 @@ const Project = () => {
             key={project?.id}
             className="min-h-[150px] lg:max-h-[200px] border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
           >
-            <div className="w-full lg:w-[280px] lg:h-full h-[200px] bg-gray-200 group overflow-hidden">
+            <div className="w-full object-cover object-top lg:w-[280px] lg:h-full h-[200px] bg-gray-200 group overflow-hidden">
               <Image
                 width={500}
                 height={500}
-                className="h-full w-full lg:w-[280px] group-hover:scale-110"
+                className="h-full w-full object-cover object-top lg:w-[280px] group-hover:scale-110"
                 src={project?.img}
                 alt={project?.title || ""}
               />

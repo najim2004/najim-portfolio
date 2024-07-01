@@ -10,7 +10,7 @@ const PackagesCard = ({ technologies, title }) => {
       <div className="p-5 flex gap-4 flex-wrap justify-center">
         {technologies?.map((technology, idx) => (
           <span
-            className="border-[1px] px-[2px] rounded-md border-box-border bg-box-border text-primary/80 font-medium text-sm"
+            className="px-[2px] rounded-md  bg-box-border duration-300 dark:bg-box-border/50 text-primary/80 font-medium text-sm"
             key={idx}
           >
             {technology}
