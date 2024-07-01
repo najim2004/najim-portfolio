@@ -16,10 +16,10 @@ const skillList = {
       name: "CSS",
       url: "/skills/css.svg",
     },
-    {
-      name: "Next.js",
-      url: "/skills/nextjs.svg",
-    },
+    // {
+    //   name: "Next.js",
+    //   url: "/skills/nextjs.svg",
+    // },
   ],
   backend: [
     {
