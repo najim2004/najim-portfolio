@@ -89,7 +89,8 @@ const RightSideBar = () => {
           science, design and many technologies.
           <br />
           <span className="mt-3">
-            Studying at Dhaka Polytechnic Institute in Dhaka, Bangladesh.
+            Currently, I am studying Diploma in Computer Science and Technology
+            at Dhaka Polytechnic Institute in Dhaka, Bangladesh.
           </span>
         </p>
       </div>

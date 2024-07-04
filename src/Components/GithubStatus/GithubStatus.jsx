@@ -22,7 +22,7 @@ const GithubStatus = () => {
               <td className="lg:!min-w-[100px]">Repos:</td>
               <td>
                 <span className="font-semibold">
-                  <Counter end={46} duration={3} />
+                  <Counter end={47} duration={3} />
                 </span>
               </td>
             </tr>
