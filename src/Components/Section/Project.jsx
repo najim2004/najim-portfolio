@@ -13,7 +13,7 @@ const Project = () => {
     <div className="px-4 font-primary">
       <h3 className="title duration-300 dark:text-primary-bg">Project</h3>
       <div className="w-full flex flex-col gap-4">
-        {projectList?.map((project) => (
+        {projectList?.slice(0, 3)?.map((project) => (
           <div
             key={project?.id}
             className="min-h-[150px] lg:max-h-[200px] border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
