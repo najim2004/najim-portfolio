@@ -21,11 +21,11 @@ const DetailsMain = ({ obj }) => {
   );
   return (
     <div className="min-h-[150px] bg-secondary-bg dark:bg-secondary-dark rounded-3xl border-2 border-box-border duration-300 dark:border-secondary/50 shadow-md p-10 font-primary">
-      <div className="max-w-[700px] object-cover object-top max-h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden">
+      <div className="max-w-[700px] object-cover object-top max-h-[300px] lg:max-h-[400px] bg-gray-200 mx-auto rounded-md overflow-hidden group">
         <Image
           width={500}
           height={500}
-          className="min-w-full lg:w-[700px] max-h-[400px] object-cover object-top"
+          className="min-w-full lg:w-[700px] h-full object-cover object-top duration-[8s] transform group-hover:-translate-y-[calc(100%-300px)] lg:group-hover:-translate-y-[calc(100%-400px)]"
           src={obj?.img}
           alt={obj?.title || ""}
         />

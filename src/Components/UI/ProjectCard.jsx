@@ -8,13 +8,13 @@ import "react-tooltip/dist/react-tooltip.css";
 const ProjectCard = ({ project }) => {
   return (
     <div className="border-2 border-box-border duration-300 dark:border-secondary/50 min-h-[200px] rounded-2xl font-primary flex flex-col">
-      <div className="w-full h-[200px] group overflow-hidden bg-gray-200 rounded-t-2xl">
+      <div className="w-full object-cover object-top max-h-[200px] overflow-hidden bg-gray-200 rounded-t-2xl group">
         <Image
           src={project?.img}
           alt="project Image"
           width={500}
-          height={200}
-          className="w-full h-[200px] group-hover:scale-110 duration-1000 object-cover object-top"
+          height={500}
+          className="w-full min-h-full duration-[3s] transform object-cover object-top group-hover:-translate-y-[calc(100%-200px)] "
         />
       </div>
       <div className="px-3 flex flex-col flex-1">
