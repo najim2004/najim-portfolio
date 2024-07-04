@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
           alt="project Image"
           width={500}
           height={200}
-          className="w-full h-[200px] group-hover:scale-110 duration-1000"
+          className="w-full h-[200px] group-hover:scale-110 duration-1000 object-cover object-top"
         />
       </div>
       <div className="px-3 flex flex-col flex-1">
