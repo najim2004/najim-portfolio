@@ -14,7 +14,7 @@ const MainContent = () => {
       </div>
       <div
         id="scrollable"
-        className="lg:overflow-y-scroll lg:max-h-[calc(100vh-169px)]"
+        className="hide-scrollbar lg:overflow-y-scroll lg:max-h-[calc(100vh-169px)]"
       >
         <div id="about">
           <About />
