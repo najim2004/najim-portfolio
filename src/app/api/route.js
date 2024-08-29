@@ -24,6 +24,7 @@ export const GET = async (req) => {
         avatar_url: data.avatar_url,
         following: data.following,
         followers: data.followers,
+        public_repos: data.public_repos,
       },
       { status: 200 }
     );
