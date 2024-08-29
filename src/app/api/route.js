@@ -19,7 +19,14 @@ export const GET = async (req) => {
     }
 
     const data = await response.json();
-    return NextResponse.json(data, { status: 200 });
+    return NextResponse.json(
+      {
+        avatar_url: data.avatar_url,
+        following: data.following,
+        followers: data.followers,
+      },
+      { status: 200 }
+    );
   } catch (err) {
     return NextResponse.json(
       { message: "Something Went Wrong", err },
