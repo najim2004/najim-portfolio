@@ -20,13 +20,13 @@ const RightSideBar = () => {
   });
 
   return (
-    <div className="flex p-5 flex-col justify-center items-center font-primary">
+    <div className="flex p-5 flex-col justify-center items-center font-primary overflow-x-auto">
       {/* image */}
 
       <Image
-        width={500}
-        height={500}
-        className="object-top size-[250px] rounded-full object-cover border-4 border-img-border duration-300 dark:border-box-border shadow-lg"
+        width={250}
+        height={250}
+        className="object-top lg:size-[180px] size-[250px] xl:size-[250px] rounded-full object-cover border-4 border-img-border duration-300 dark:border-box-border shadow-lg"
         src={Profile}
         alt="Najim"
       />

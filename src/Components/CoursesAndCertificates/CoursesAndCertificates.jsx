@@ -4,13 +4,13 @@ import { FaDownload } from "react-icons/fa";
 
 const CoursesAndCertificates = () => {
   return (
-    <div className="flex-1 font-primary border-box-border dark:border-secondary/50 border-2 shadow-md rounded-3xl w-full min-h-[100px] bg-secondary-bg dark:bg-secondary-dark duration-300 overflow-hidden">
-      <div className="w-full h-16 flex justify-center items-center border-b border-box-border dark:border-secondary/50 bg-secondary/10 dark:bg-secondary/50 rounded-t-3xl">
-        <h3 className="text-xl font-medium duration-300 dark:text-primary-bg text-center">
+    <div className="flex-1 font-primary border-box-border dark:border-secondary/50 border-2 shadow-md rounded-3xl w-full min-h-[100px] bg-secondary-bg dark:bg-secondary-dark duration-300 hide-scrollbar overflow-y-scroll">
+      <div className="w-full h-12 flex justify-center items-center border-b border-box-border dark:border-secondary/50 bg-secondary/10 dark:bg-secondary/50 rounded-t-3xl">
+        <h3 className="text-lg font-semibold duration-300 dark:text-primary-bg text-center">
           Courses & Certificates
         </h3>
       </div>
-      <div className="hide-scrollbar overflow-y-scroll size-full">
+      <div className="">
         <div className="p-3">
           <div className="border border-box-border dark:border-secondary/50 p-3 rounded-xl">
             <div className="mb-5">

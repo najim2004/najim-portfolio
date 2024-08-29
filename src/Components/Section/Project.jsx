@@ -16,19 +16,19 @@ const Project = () => {
         {projectList?.slice(0, 3)?.map((project) => (
           <div
             key={project?.id}
-            className="min-h-[150px] lg:max-h-[200px] border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col lg:flex-row gap-4"
+            className="min-h-[150px] xl:max-h-[220px] hover:bg-gray-100 border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col xl:flex-row gap-4"
           >
-            <div className="w-full object-cover object-top lg:w-[280px] lg:h-full max-h-[200px] bg-gray-200 group overflow-hidden">
+            <div className="w-full object-cover object-top xl:w-[280px] xl:h-full max-h-[220px] bg-gray-200 group overflow-hidden">
               <Image
                 width={500}
                 height={500}
-                className="h-full w-full object-cover object-top lg:w-[280px] duration-[3s] transform  group-hover:-translate-y-[calc(100%-200px)]"
+                className="h-full w-full object-cover object-top xl:w-[280px] duration-[3s] transform  group-hover:-translate-y-[calc(100%-220px)]"
                 src={project?.img}
                 alt={project?.title || ""}
               />
             </div>
-            <div className="flex flex-1 flex-col justify-center px-3 lg:py-5">
-              <h3 className="text-lg font-medium text-primary duration-300 dark:text-primary-bg">
+            <div className="flex flex-1 flex-col justify-center px-3 xl:py-5">
+              <h3 className="text-xl font-medium text-primary duration-300 dark:text-primary-bg">
                 {project?.title}
               </h3>
               <p className="text-secondary leading-5 my-2 text-sm line-clamp-3 duration-300 dark:text-gray-400">
@@ -37,7 +37,7 @@ const Project = () => {
               <div className="flex gap-2 flex-wrap">
                 {project?.tags?.map((tag, idx) => (
                   <span
-                    className="font-medium text-sm bg-box-border duration-300 dark:bg-box-border/10 text-primary dark:text-gray-400 rounded-lg px-1"
+                    className="font-medium text-sm xl:text-xs bg-box-border duration-300 dark:bg-box-border/10 text-primary dark:text-gray-400 rounded-xl px-1"
                     key={idx}
                   >
                     {tag}
@@ -45,7 +45,7 @@ const Project = () => {
                 ))}
               </div>
             </div>
-            <div className="text-2xl flex lg:flex-col justify-end lg:justify-center items-center gap-3 m-4 lg:pr-2 lg:m-0 text-primary duration-300 dark:text-primary-bg">
+            <div className="text-2xl flex xl:flex-col justify-end xl:justify-center items-center gap-3 m-4 xl:pr-2 xl:m-0 text-primary duration-300 dark:text-primary-bg">
               <Link
                 target="_blank"
                 data-tooltip-id="live-site"
