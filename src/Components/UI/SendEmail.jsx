@@ -1,9 +1,12 @@
 "use client";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import { useState } from "react";
 
 const SendEmail = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const handleSubmit = (e) => {
+    setIsLoading(true);
     e.preventDefault();
     const form = e.target;
     const templateParams = {
@@ -23,9 +26,11 @@ const SendEmail = () => {
         (response) => {
           toast.success("Successfully Email Sent!");
           form.reset();
+          setIsLoading(false);
         },
         (error) => {
           toast.error("Failed to Email Sent!");
+          setIsLoading(false);
         }
       );
   };
@@ -51,7 +56,7 @@ const SendEmail = () => {
               type="text"
               name="name"
               required
-              className="mt-1 block w-full h-10 border border-img-border bg-white duration-300 dark:bg-white/90 px-3 rounded-xl"
+              className="mt-1 block w-full h-10 border border-img-border bg-white duration-300 dark:bg-transparent px-3 resize-none rounded-xl dark:text-primary-bg outline-none"
             />
           </div>
           <div>
@@ -65,7 +70,7 @@ const SendEmail = () => {
               type="email"
               name="email"
               required
-              className="mt-1 block w-full h-10 border border-img-border bg-white duration-300 dark:bg-white/90 px-3 rounded-xl"
+              className="mt-1 block w-full h-10 border border-img-border bg-white duration-300 dark:bg-transparent resize-none rounded-xl dark:text-primary-bg outline-none px-3"
             />
           </div>
           <div className="lg:col-span-2">
@@ -79,15 +84,20 @@ const SendEmail = () => {
               name="message"
               rows="4"
               required
-              className="mt-1 block w-full h-[160px] border border-img-border shadow-sm bg-white duration-300 dark:bg-white/90 p-3 resize-none rounded-xl"
+              className="mt-1 block w-full h-[160px] border border-img-border shadow-sm bg-white duration-300 dark:bg-transparent p-3 resize-none rounded-xl dark:text-primary-bg outline-none"
             ></textarea>
           </div>
           <div className="lg:col-span-2">
             <button
+              disabled={isLoading}
               type="submit"
-              className="w-full flex justify-center py-2 px-4 bg-primary/80 hover:bg-primary/50 text-white duration-300 dark:text-primary-bg rounded-xl"
+              className="w-full flex justify-center py-2 px-4 bg-primary/80 dark:bg-primary-bg group dark:text-primary dark:hover:bg-primary-bg/80 hover:bg-primary/50 text-white duration-300 rounded-xl disabled:cursor-not-allowed"
             >
-              Send Message
+              {isLoading ? (
+                <span className="loading loading-dots loading-sm"></span>
+              ) : (
+                "Send Message"
+              )}
             </button>
           </div>
         </form>

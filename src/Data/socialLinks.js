@@ -14,7 +14,7 @@ const socialLinks = [
   },
   {
     name: "Linkedin",
-    url: "https://linkedin.com/in/najim-developer",
+    url: "https://linkedin.com/in/mohammad-najim2004",
     icon: <FaLinkedinIn />,
   },
   {

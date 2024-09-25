@@ -16,7 +16,7 @@ const Project = () => {
         {projectList?.slice(0, 3)?.map((project) => (
           <div
             key={project?.id}
-            className="min-h-[150px] xl:max-h-[220px] hover:bg-gray-100 border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col xl:flex-row gap-4"
+            className="min-h-[150px] xl:max-h-[220px] hover:bg-gray-100 dark:hover:bg-gray-600 border border-box-border duration-300 dark:border-secondary/50 rounded-2xl overflow-hidden flex flex-col xl:flex-row gap-4"
           >
             <div className="w-full object-cover object-top xl:w-[280px] xl:h-full max-h-[220px] bg-gray-200 group overflow-hidden">
               <Image
@@ -27,7 +27,7 @@ const Project = () => {
                 alt={project?.title || ""}
               />
             </div>
-            <div className="flex flex-1 flex-col justify-center px-3 xl:py-5">
+            <div className="flex flex-1 flex-col justify-center px-3">
               <h3 className="text-xl font-medium text-primary duration-300 dark:text-primary-bg">
                 {project?.title}
               </h3>
