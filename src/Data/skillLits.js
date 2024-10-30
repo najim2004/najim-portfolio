@@ -34,6 +34,10 @@ const skillList = {
       name: "Node.js",
       url: "/skills/nodejs.svg",
     },
+    {
+      name: "Mongoose",
+      url: "/skills/mongoose.svg",
+    },
   ],
   programmingLanguage: [
     {

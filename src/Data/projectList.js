@@ -1,6 +1,42 @@
 const projectList = [
   {
     id: "1",
+    title: "DevLinks24",
+    img: "https://i.ibb.co.com/7GWQJ5D/image.png",
+    description:
+      "DevLinks24 is a platform that allows users to create personalized, customizable profiles where they can showcase links to their social media accounts, portfolios, and other online content. It provides users with an easy-to-use interface to manage, update, and reorder links, complete with platform-specific icons and background colors. Ideal for developers, freelancers, and creators, DevLinks24 simplifies sharing a curated online presence in one link.",
+    githubUrl: "https://github.com/najim2004/link-sharing-app-client",
+    url: "https://devlinks24.web.app/",
+    tags: [
+      "React.js",
+      "Tailwind",
+      "Node.js",
+      "mongoDB",
+      "mongoose",
+      " Express.js",
+      "jwt",
+    ],
+    skills: {
+      frontend: ["React.js", "Tailwind", "HTML", "CSS"],
+      backend: ["Node.js", "Express.js", "MongoDB", "Mongoose"],
+      authentication: ["JWT"],
+      programmingLanguage: ["JavaScript"],
+    },
+    packages: {
+      frontend: [
+        "React Router DOM",
+        "Axios",
+        "TanStack Query",
+        "React Helmet Async",
+        "React Hook Form",
+        "React Hot Toast",
+        "React Icons",
+      ],
+      backend: ["dotenv", "CORS", "Cookie Parser"],
+    },
+  },
+  {
+    id: "2",
     title: "MultiCreatify",
     img: "https://i.ibb.co/SwQKmtX/Home-Multi-Creatify.png",
     description:
@@ -43,7 +79,7 @@ const projectList = [
     },
   },
   {
-    id: "2",
+    id: "3",
     title: "Voyage Volunteer",
     img: "https://i.ibb.co/0nd7pdS/Voyage-Volunteer-Home.png",
     description:
@@ -84,7 +120,7 @@ const projectList = [
     },
   },
   {
-    id: "3",
+    id: "4",
     title: "Artistry Avenue",
     img: "https://i.ibb.co/9TX2F8V/Artistry-Avenue-Home.png",
     description:
@@ -117,7 +153,7 @@ const projectList = [
     },
   },
   {
-    id: "4",
+    id: "5",
     title: "Nexus Properties",
     img: "https://i.ibb.co/kK9Vzk1/Nexus-Properties-Home.png",
     description:
