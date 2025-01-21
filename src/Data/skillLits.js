@@ -20,6 +20,22 @@ const skillList = {
     //   name: "Next.js",
     //   url: "/skills/nextjs.svg",
     // },
+    {
+      name: "Redux",
+      url: "/skills/redux.svg",
+    },
+    {
+      name: "GraphQL",
+      url: "/skills/graphql.svg",
+    },
+    {
+      name: "Apollo",
+      url: "/skills/apollo.svg",
+    },
+    {
+      name: "Shadcn UI",
+      url: "/skills/shadcn.svg",
+    },
   ],
   backend: [
     {
@@ -37,6 +53,14 @@ const skillList = {
     {
       name: "Mongoose",
       url: "/skills/mongoose.svg",
+    },
+    {
+      name: "GraphQL",
+      url: "/skills/graphql.svg",
+    },
+    {
+      name: "Apollo",
+      url: "/skills/apollo.svg",
     },
   ],
   programmingLanguage: [

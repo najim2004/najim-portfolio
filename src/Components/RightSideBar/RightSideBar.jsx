@@ -8,11 +8,7 @@ import socialLinks from "@/Data/socialLinks";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 const RightSideBar = () => {
   const [text] = useTypewriter({
-    words: [
-      "Front-end Web Developer",
-      "React Developer",
-      "MERN Stack Developer",
-    ],
+    words: ["Front-end Developer", "React Developer", "MERN Developer"],
     loop: true,
     typeSpeed: 70,
     deleteSpeed: 50,
