@@ -21,6 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="r_RzsEN6Im26WDNrVKBu9TOwO4AH69eHnQCIx0_Dcas"
+      />
       <body className={rubik.className}>
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
