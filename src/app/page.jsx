@@ -4,20 +4,6 @@ import CoursesAndCertificates from "@/Components/CoursesAndCertificates/CoursesA
 import GithubStatus from "@/Components/GithubStatus/GithubStatus";
 import MainContent from "@/Components/MainContent/MainContent";
 import RightSideBar from "@/Components/RightSideBar/RightSideBar";
-
-export const metadata = {
-  title: "Najim | Portfolio",
-  description:
-    "Welcome to my portfolio website. I am a full stack web developer specializing in modern web technologies.",
-  keywords: [
-    "portfolio",
-    "web developer",
-    "full stack",
-    "software engineer",
-    "react",
-    "next.js",
-  ],
-};
 const Home = () => {
   return (
     <div

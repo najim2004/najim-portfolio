@@ -6,7 +6,16 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Najim | Portfolio",
-  description: "A portfolio by Najim",
+  description:
+    "Welcome to my portfolio website. I am a full stack web developer specializing in modern web technologies.",
+  keywords: [
+    "portfolio",
+    "web developer",
+    "full stack",
+    "software engineer",
+    "react",
+    "next.js",
+  ],
 };
 
 export default function RootLayout({ children }) {

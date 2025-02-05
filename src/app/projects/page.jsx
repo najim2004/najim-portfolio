@@ -2,20 +2,6 @@ import CopyRights from "@/Components/CopyRights/CopyRights";
 import ProjectsHeader from "@/Components/Projects/ProjectsHeader";
 import ProjectMain from "@/Components/Projects/ProjectsMain";
 
-export const metadata = {
-  title: "Projects | Najim",
-  description:
-    "Explore my portfolio of web development projects and applications.",
-  keywords: [
-    "projects",
-    "web development",
-    "portfolio",
-    "applications",
-    "React",
-    "Next.js",
-  ],
-};
-
 const Projects = () => {
   return (
     <div className="relative dark:bg-primary-dark">
