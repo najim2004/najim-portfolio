@@ -8,6 +8,11 @@ import DetailsMain from "@/Components/ProjectDetails/DetailsMain";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
+export const metadata = {
+  title: "Project Details",
+  description: "View detailed information about this project",
+};
+
 const ProjectDetails = () => {
   const [data, setData] = useState({});
   const { id } = useParams();

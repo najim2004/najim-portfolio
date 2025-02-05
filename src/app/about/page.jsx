@@ -1,6 +1,12 @@
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "About - Najim",
+  description:
+    "Learn more about Najim - A passionate web developer and programmer.",
+};
+
 const About = () => {
   return (
     <div className="relative dark:bg-primary-dark">
