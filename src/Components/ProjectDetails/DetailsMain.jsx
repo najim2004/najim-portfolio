@@ -40,6 +40,14 @@ const DetailsMain = ({ obj }) => {
             {obj?.description}
           </p>
         </div>
+        <div className="">
+          <h3 className="h3">Features:</h3>
+          <ul className="list-disc list-inside text-secondary dark:text-primary-bg/80">
+            {obj?.features?.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </div>
         {/* Project skills */}
         <div className="">
           <h3 className="h3">Technologies:</h3>
@@ -62,26 +70,6 @@ const DetailsMain = ({ obj }) => {
                 title={"Authentication"}
               />
             )}
-          </div>
-        </div>
-        {/* Packages */}
-        <div className="">
-          <div className="">
-            <h3 className="h3">Technologies:</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
-              {obj?.packages?.frontend?.length > 0 && (
-                <PackagesCard
-                  technologies={obj?.packages?.frontend}
-                  title={"Front End"}
-                />
-              )}
-              {obj?.packages?.backend?.length > 0 && (
-                <PackagesCard
-                  technologies={obj?.packages?.backend}
-                  title={"Back End"}
-                />
-              )}
-            </div>
           </div>
         </div>
       </div>
